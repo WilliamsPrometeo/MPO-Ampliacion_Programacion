@@ -32,12 +32,12 @@ public class ControlAcceso {
 
         if (edad < 18) {
             mensaje = "Acceso denegado: menor de edad.";
-        } else if (edad > 18 && edad < 65) {
+        } else if (edad < 65) {
             mensaje = "Acceso permitido.";
-        } else if  (edad > 65 && edad < 120) {
+        } else {
             mensaje = "Acceso con beneficios para jubilados.";
-        } else
-            mensaje = "Error";
+        }
+
         return mensaje;
     }
 }
