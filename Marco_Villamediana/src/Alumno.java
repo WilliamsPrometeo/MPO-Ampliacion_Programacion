@@ -80,7 +80,6 @@ public class Alumno {
     public double comprobarNotas2() {
         boolean bien2;
         do {
-
             nota2 = getNota2();
             if (nota2 < 0 || nota2 > 10) {
                 System.out.println("Nota no válida. indique una nota del 0 al 10");
