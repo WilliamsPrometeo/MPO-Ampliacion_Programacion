@@ -1,13 +1,10 @@
-import java.util.Scanner;
-public class ControlAcceso_Alejandro_Verdugo {
+    private static final MyScanner sc = new MyScanner();
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in); // objeto sc para leer lo que pone el usuario
         int intentos = 0; // Contador de intentos
         boolean edadValida=false;
         int edad = 0;
         while (intentos< 3 && !edadValida){ // Bucle para medir los intentos
-            System.out.print("Introduce tu edad:");
-            edad = sc.nextInt();
+            edad = sc.pedirNumero("introduce tu edad:");
             if (edad<0 || edad >120){
                 System.out.println("Error : edad inválida");
             intentos++;
@@ -26,7 +23,7 @@ public class ControlAcceso_Alejandro_Verdugo {
                 System.out.println("Acceso con beneficios para jubilados");
             }
         }
-        sc.close(); // para cerrar el scanner
+        sc.cerrar(); // para cerrar el scanner
     }
-}
+
         
