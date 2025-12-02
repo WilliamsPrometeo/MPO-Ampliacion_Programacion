@@ -1,4 +1,4 @@
-package Simulacros;
+package Simulacros.Empleado;
 
 public class Empleado {
     private String nombre;

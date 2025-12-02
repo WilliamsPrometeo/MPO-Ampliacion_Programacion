@@ -1,4 +1,6 @@
-package Simulacros;
+package Simulacros.Empleado;
+
+import Simulacros.MyScanner;
 
 public class MainEmpleado {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Simulacros;
+package Simulacros.Facturas;
 
 public class Factura {
 

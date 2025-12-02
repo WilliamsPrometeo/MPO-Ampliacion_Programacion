@@ -1,4 +1,6 @@
-package Simulacros;
+package Simulacros.Facturas;
+
+import Simulacros.MyScanner;
 
 public class MainFactura {
 
