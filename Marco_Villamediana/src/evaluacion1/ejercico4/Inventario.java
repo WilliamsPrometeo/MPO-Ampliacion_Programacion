@@ -1,4 +1,4 @@
-package ejercico4;
+package evaluacion1.ejercico4;
 
 import java.util.HashMap;
 import java.util.InputMismatchException;
@@ -62,7 +62,7 @@ public class Inventario {
      * @throws CodigoInvalidoException que envia un mensaje de error si no se cumplen los requisitos
      */
 
-    public static void añadirProducto() throws CodigoInvalidoException {
+    public static void añadirProducto() {
         String producto ="";
         double precio = 0;
         boolean correcto;
@@ -96,15 +96,11 @@ public class Inventario {
      * @throws ProductoNoEncontradoException que envia un mensaje de error si no se cumplen los requisitos
      */
 
-    public static void buscarProducto() throws ProductoNoEncontradoException {
+    public static void buscarProducto()  {
         System.out.println("Introduzca el código del producto que desea buscar: ");
         String code = sc.nextLine();
-        try {
-            if(inventario.containsKey(code)) {
-                System.out.println("El código del producto es: "+code+ " y su precio es de " +inventario.get(code));
-            }
-        } catch (ProductoNoEncontradoException e) {
-            System.out.println(e.getMessage());
+        if(inventario.containsKey(code)) {
+            System.out.println("El código del producto es: "+code+ " y su precio es de " +inventario.get(code));
         }
     }
 
@@ -113,7 +109,7 @@ public class Inventario {
      * @throws ProductoNoEncontradoException que envia un mensaje de error si no se cumplen los requisitos
      */
 
-    public static void actualizarProducto() throws ProductoNoEncontradoException {
+    public static void actualizarProducto() {
         System.out.println("Indique el codigo del producto que desea actualizar: ");
         String code = sc.next();
         String codigo = "";

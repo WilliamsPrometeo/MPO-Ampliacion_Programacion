@@ -1,7 +1,8 @@
+import ejercicio1_2ev.MyScanner;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 
 
 public class Productos {

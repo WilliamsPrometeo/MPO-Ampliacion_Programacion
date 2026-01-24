@@ -2,6 +2,8 @@
 //FECHA: 7/11/2025
 //No me comprueba las notas bien, osea lo hace igualmente. He puesto el bucle con un double en vez de un void para que no printee en bucle lo mismo
 
+import ejercicio1_2ev.MyScanner;
+
 public class ControlNotas {
     private static final MyScanner sc = new MyScanner();
     public static void main(String[] args) {

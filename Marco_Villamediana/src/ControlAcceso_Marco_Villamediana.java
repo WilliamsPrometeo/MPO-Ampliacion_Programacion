@@ -1,3 +1,5 @@
+import ejercicio1_2ev.MyScanner;
+
 //EJERCICIO DE MARCO VILLAMEDIANA PONCE DAW
 //FECHA: 31/10/2025
 public class ControlAcceso_Marco_Villamediana {

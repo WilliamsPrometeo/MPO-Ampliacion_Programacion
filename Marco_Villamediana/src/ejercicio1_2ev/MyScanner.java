@@ -1,3 +1,5 @@
+package ejercicio1_2ev;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
