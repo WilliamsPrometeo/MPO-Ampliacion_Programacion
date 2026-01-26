@@ -1,66 +1,49 @@
 package prueba;
 
-/**
- * Clase Libro
- * @autor alumno - Alejandro
- */
 public class Libro {
-    // Atributos privados
+    private String isbn;
     private String titulo;
     private String autor;
+    private int anioPublicacion;
 
-    //Constructor
-
-    /**
-     * Constructor principal de la clase Libro
-     *
-     * @param titulo EStablece el titulo del Libro
-     * @param autor establece el autor del libro
-     */
-    public Libro(String titulo, String autor) {
+    public Libro(String isbn, String titulo, String autor, int anioPublicacion) {
+        this.isbn = isbn;
         this.titulo = titulo;
         this.autor = autor;
+        this.anioPublicacion = anioPublicacion;
     }
+    public String getIsbn() { return isbn; }
 
-    // Getters y Setters
+    public void setIsbn(String isbn) { this.isbn = isbn; }
 
-    /**
-     * Getter del atributo titulo
-     *
-     * @return el titulo del libro
-     */
-    public String getTitulo() {return titulo;}
+    public String getTitulo() { return titulo; }
 
-    /**
-     * Setter del atributo titulo
-     *
-     * @param titulo establece el titulo del libro
-     */
-    public void setTitulo(String titulo) {this.titulo = titulo;}
+    public void setTitulo(String titulo) { this.titulo = titulo; }
 
-    /**
-     * Getter del atributo Autor
-     *
-     * @return el nombre del autor del libro
-     */
-    public String getAutor() {return autor;}
+    public String getAutor() { return autor; }
 
-    /**
-     * Setter del atributo del autor
-     *
-     * @param autor establece el nombre del autor
-     */
-    public void setAutor(String autor) {this.autor = autor;}
+    public void setAutor(String autor) { this.autor = autor; }
 
+    public int getAnioPublicacion() { return anioPublicacion; }
 
-    //Metodo toString
+    public void setAnioPublicacion(int anioPublicacion) {this.anioPublicacion = anioPublicacion; }
 
-    /**
-     * Metodo para mostrar los datos del Libro
-     *
-     * @return texto formateado con los datos del libro
-     */
+    @Override
     public String toString() {
-        return "Libro{" + "titulo=" + titulo + ", autor=" + autor + '}';
+        return String.format("Isbn: %d, %s,\n\tTitulo: %s | Autor: %.2f", isbn, titulo, autor, anioPublicacion);
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+
+        Libro libro = (Libro) obj;
+
+        String isbn = String.valueOf(libro.getIsbn());
+
+        return isbn != null ? isbn.equals(String.valueOf(libro.isbn)) : String.valueOf(libro.isbn) == null;
+    }
+    @Override
+    public int hashCode() {return String.valueOf(isbn) != null ? String.valueOf(isbn).hashCode(): 0;}
 }
