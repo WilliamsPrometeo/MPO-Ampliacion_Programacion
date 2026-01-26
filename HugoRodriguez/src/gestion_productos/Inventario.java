@@ -20,6 +20,7 @@ public class Inventario {
     /**
      * Getter y Setter para el código del producto.
      */
+
     public String getCodigo() {
         return codigo;
     }

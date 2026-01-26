@@ -1,3 +1,5 @@
+import recursos.MyScanner;
+
 public class ControlAcceso {
     private static final MyScanner sc = new MyScanner();
     public static void main(String[] args) {

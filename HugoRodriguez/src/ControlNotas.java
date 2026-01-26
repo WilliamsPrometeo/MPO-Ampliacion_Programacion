@@ -1,4 +1,4 @@
-import javax.print.attribute.standard.Media;
+import recursos.MyScanner;
 
 public class ControlNotas {
     private static final MyScanner sc = new MyScanner();

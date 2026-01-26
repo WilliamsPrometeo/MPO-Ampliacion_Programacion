@@ -4,6 +4,8 @@ Curso: DAW 1 - Ampliacion
 Fecha: 13/11/2025
  */
 
+import recursos.MyScanner;
+
 public class CalculadoraHoras {
     // Constantes según recomendaciones
     private static final int HORAS_MIN = 0;
