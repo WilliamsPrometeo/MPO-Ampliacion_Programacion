@@ -8,9 +8,9 @@ public class Libreria {
 
     public static void main(String[] args) {
         Biblioteca biblioteca = new Biblioteca();
-        Libro libro1 = new Libro("Cervantes", "El Quijote");
-        Libro libro2 = new Libro("Isaac Asimov", "Fundación");
-        Libro libro3 = new Libro("Stephen King", "It");
+        Libro1 libro1 = new Libro1("Cervantes", "El Quijote");
+        Libro1 libro2 = new Libro1("Isaac Asimov", "Fundación");
+        Libro1 libro3 = new Libro1("Stephen King", "It");
 
         biblioteca.añadirLibro(libro1);
         biblioteca.añadirLibro(libro2);

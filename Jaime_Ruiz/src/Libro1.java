@@ -1,10 +1,10 @@
 /**
- * Clase Libro
+ * Clase MapasBiblioteca.Libro
  *
  * @author Alumno - Jaime Ruiz
  * @version 1.0
  */
-public class Libro {
+public class Libro1 {
 //Atributos privados
     private String titulo;
     private String autor;
@@ -12,12 +12,12 @@ public class Libro {
     //Constructores
 
     /**
-     * Constructor principal de la clase Libro
+     * Constructor principal de la clase MapasBiblioteca.Libro
       * @param autor establece el autor del libro
      * @param titulo establece el titulo del libro
      */
 
-    public Libro(String autor, String titulo) {
+    public Libro1(String autor, String titulo) {
         this.autor = autor;
         this.titulo = titulo;
     }

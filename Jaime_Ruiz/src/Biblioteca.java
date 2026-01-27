@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class Biblioteca {
 //Atributos privados
-    private ArrayList<Libro> libros;
+    private ArrayList<Libro1> libros;
 
     //Constructores
 
@@ -26,7 +26,7 @@ public class Biblioteca {
      * Getter del atributo libros
      * @return la lista de libros
      */
-    public ArrayList<Libro> getLibros() {
+    public ArrayList<Libro1> getLibros() {
         return libros;
     }
 
@@ -34,7 +34,7 @@ public class Biblioteca {
      * Setter del atributo libros
      * @param libros establece los libros
      */
-    public void setLibros(ArrayList<Libro> libros) {
+    public void setLibros(ArrayList<Libro1> libros) {
         this.libros = libros;
     }
 
@@ -44,7 +44,7 @@ public class Biblioteca {
      * Metodo para añadir un libro a la lista
      * @param libro añade los libros a la lista
      */
-    public void añadirLibro(Libro libro) {
+    public void añadirLibro(Libro1 libro) {
         libros.add(libro);
     }
 
@@ -55,7 +55,7 @@ public class Biblioteca {
      *
      */
     public void mostrarLibros() {
-        for (Libro libro : libros) {
+        for (Libro1 libro : libros) {
             System.out.println(libro);
         }
     }
@@ -66,7 +66,7 @@ public class Biblioteca {
      * @param autor el nombre del autor
      */
     public void buscarPorAutor(String autor) {
-        for (Libro libro : libros) {
+        for (Libro1 libro : libros) {
             if (libro.getAutor().equals(autor)) {
                 System.out.println(libro);
             }

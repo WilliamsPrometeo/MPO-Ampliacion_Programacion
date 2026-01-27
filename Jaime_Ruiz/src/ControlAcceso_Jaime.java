@@ -1,3 +1,5 @@
+import mapasBiblioteca.MyScanner;
+
 public class ControlAcceso_Jaime {
 
     private static final MyScanner sc = new MyScanner();

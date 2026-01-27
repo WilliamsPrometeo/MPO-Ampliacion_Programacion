@@ -1,6 +1,8 @@
+import mapasBiblioteca.MyScanner;
+
 public class ControlNotas {
 
-    //Inicializamos el metodo MyScanner
+    //Inicializamos el metodo mapasBiblioteca.MyScanner
     private static final MyScanner sc = new MyScanner();
 
     public static void main(String[] args) {
@@ -22,7 +24,7 @@ public class ControlNotas {
         alumno.MostrarResumen();
 
 
-        //Cerramos el MyScanner
+        //Cerramos el mapasBiblioteca.MyScanner
         sc.cerrar();
 
     }
