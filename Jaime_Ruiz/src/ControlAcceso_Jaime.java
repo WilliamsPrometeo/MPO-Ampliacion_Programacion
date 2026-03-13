@@ -1,4 +1,4 @@
-import mapasBiblioteca.MyScanner;
+import gestionpedidos.recursos.MyScanner;
 
 public class ControlAcceso_Jaime {
 
