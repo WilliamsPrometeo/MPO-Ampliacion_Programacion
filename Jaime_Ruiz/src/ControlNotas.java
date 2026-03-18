@@ -1,8 +1,8 @@
-import mapasBiblioteca.MyScanner;
+import gestionpedidos.recursos.MyScanner;
 
 public class ControlNotas {
 
-    //Inicializamos el metodo mapasBiblioteca.MyScanner
+
     private static final MyScanner sc = new MyScanner();
 
     public static void main(String[] args) {

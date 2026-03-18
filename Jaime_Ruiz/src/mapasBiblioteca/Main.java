@@ -1,5 +1,7 @@
 package mapasBiblioteca;
 
+import gestionpedidos.recursos.MyScanner;
+
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.Map;
